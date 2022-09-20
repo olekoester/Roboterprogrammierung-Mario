@@ -2,6 +2,17 @@ package controller;
 
 import java.rmi.RemoteException;
 
+import drive.Drive;
+import drive.Manual;
+import gui.Gui;
+import lejos.hardware.Sound;
+import lejos.remote.ev3.RemoteEV3;
+import lejos.utility.Delay;
+import sensor.ColorSensor;
+import sensor.TouchSensor;
+import sensor.UltraSonicSensor;
+
+
 public class Controller extends Thread {
 
     static final float SPEED_PERCENT = 100;
